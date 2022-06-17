@@ -22,7 +22,7 @@ function MollieComponentNew(props) {
                 }
             });
         }
-        // Indique comment nettoyer l'effet :
+        // Specifies how to clean up the effect:
         return function cleanup() {
             if(component){
                 component.unmount();
@@ -31,7 +31,7 @@ function MollieComponentNew(props) {
     },[component]);
 
     return <div className="mt-4">
-        <div className="font-ruda font-semibold text-primary mb-1">{__(name)}</div>
+        <div className="font-semibold text-primary mb-1">{__(name)}</div>
         <div className="bg-white p-4 py-3 rounded-lg" ref={componentRef}/>
         {errorMessage && <div className="component-error text-secondary text-sm rounded-lg mt-1">{errorMessage}</div>}
     </div>;
