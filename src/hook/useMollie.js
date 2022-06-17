@@ -1,5 +1,5 @@
 import {useCallback, useEffect, useState} from "react";
-import {profileId, clientConfig} from "@mdn/react-checkout-mollie/utility/config"
+import {profileId, clientConfig} from "../utility/config"
 
 let molliePromise;
 /**
