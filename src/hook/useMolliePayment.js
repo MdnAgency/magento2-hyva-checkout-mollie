@@ -66,7 +66,6 @@ export default function useMolliePayment({ methodCode }) {
      * @type {(function(): Promise<*>)|*}
      */
     const placeCardOrder = useCallback(async () => {
-        console.log("placeCardOrder");
         try {
             if (mollie) {
                 console.log("Mollie is defined");
