@@ -4,9 +4,7 @@ import LocalStorage from '@hyva/react-checkout/utils/localStorage';
 import { PLACE_MOLLIE_ORDER } from './mutation';
 import modifier from './modifier';
 
-export default async function placeOrder(
-  appDispatch
-) {
+export default async function placeOrder(appDispatch) {
   const variables = {
     cartId: LocalStorage.getCartId(),
   };

@@ -3,13 +3,12 @@ import { useContext } from 'react';
 import AppContext from '@hyva/react-checkout/context/App/AppContext';
 
 export default function useMollieAppContext() {
-    const [, { dispatch: appDispatch, setErrorMessage, setPageLoader }] =
-        useContext(AppContext);
+  const [, { dispatch: appDispatch, setErrorMessage, setPageLoader }] =
+    useContext(AppContext);
 
-    return {
-        appDispatch,
-        setErrorMessage,
-        setPageLoader,
-    };
+  return {
+    appDispatch,
+    setErrorMessage,
+    setPageLoader,
+  };
 }
-

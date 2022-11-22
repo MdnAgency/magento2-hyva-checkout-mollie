@@ -4,7 +4,6 @@ import cartBillingAddrInfo from '@hyva/react-checkout/api/cart/utility/query/car
 import cartShippingAddrInfo from '@hyva/react-checkout/api/cart/utility/query/cartShippingAddrInfo';
 import cartPaymentMethodsInfo from '@hyva/react-checkout/api/cart/utility/query/cartPaymentMethodsInfo';
 
-
 export const PLACE_MOLLIE_ORDER = `
     mutation mollieRestoreCart(
         $cartId: String!
